@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato | Ana&#32;Clara Martins - Fale Comigo</title>
+<meta name="description" content="Entre em contato com Ana Clara Martins - Estudante de TI na E.E. Doutor João Beraldo. Formulário com CPF, telefone, interesse e problema. Resposta em até 24h.">
+<link rel="icon" type="image/png" href="img/logo.png">
+<meta property="og:title" content="Contato | Ana Clara Martins">
+<meta property="og:description" content="Quer um site? Me conta seu CPF, problema e interesse que te respondo em 24h!">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+:root{--purple:#8951c6;--purple-dark:#7540ad;--text:#1a1620;--muted:#7c7586;--border:#ece3f6;--bg:#fcf9ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);z-index:10}
+.wrap{max-width:1220px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:16px 24px}
+.logo{font-weight:800;font-size:1.22rem;display:flex;align-items:center;gap:8px}.logo span{color:var(--purple-dark)}
+.nav{display:flex;gap:22px;align-items:center;font-size:.9rem;color:#5b5466;font-weight:500}
+.nav a.active{color:var(--purple-dark);font-weight:700;border-bottom:2px solid var(--purple-dark);padding-bottom:2px}
+.btn-pill{padding:10px 22px;border-radius:999px;background:var(--purple-dark);color:#fff!important;font-weight:700;border:none;cursor:pointer;display:inline-flex;gap:6px;align-items:center;justify-content:center}
+.section{max-width:1220px;margin:auto;padding:60px 24px}
+.eyebrow{font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:var(--purple-dark);font-weight:800;margin-bottom:10px}
+.contato-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.card{background:#fff;border:1px solid var(--border);border-radius:22px;padding:26px;box-shadow:0 8px 30px rgba(117,64,173,.06)}
+.label{font-size:.76rem;font-weight:700;color:#4a4452;margin-bottom:4px;display:block;margin-top:12px}
+.input,.select,.textarea{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:12px;outline:none;font-family:inherit;font-size:.88rem;background:#fff}
+.input:focus,.select:focus,.textarea:focus{border-color:var(--purple-dark);box-shadow:0 0 0 3px #f3e9fb}
+.info-box{background:var(--bg);border:1px solid #f0e6f8;border-radius:16px;padding:16px;display:flex;gap:12px;align-items:center;margin-top:12px}
+.icon-box{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center}
+@media(max-width:900px){.nav{display:none}.contato-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo AC Ana Clara Martins" style="height:26px"> Ana&#32;Clara <span>Martins</span></a>
+    <nav class="nav" aria-label="Menu principal">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Quem sou eu</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contato.html" class="active">Contato</a>
+      <a href="login.html" class="btn-pill" aria-label="Entrar na área restrita"><i class="fa-solid fa-lock"></i> Login</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <section>
+    <div class="eyebrow">Contato • E.E. Doutor João Beraldo</div>
+    <h1 style="font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:.95;letter-spacing:-.02em">Entre em contato<br><span style="color:var(--purple-dark)">comigo!</span></h1>
+    <p style="color:var(--muted);max-width:520px;margin-top:12px">Preencha com CPF, qual seu problema e no que se interessa. Tudo cai no meu dashboard em login.html com botão de WhatsApp e copiar e-mail!</p>
+  </section>
+
+  <div class="contato-grid" style="margin-top:36px">
+    <section>
+      <div class="card" style="background:var(--bg);box-shadow:none">
+        <h3 style="font-weight:800"><i class="fa-solid fa-star" style="color:var(--purple-dark)"></i> Como funciona?</h3>
+        <p style="color:var(--muted);font-size:.88rem;margin-top:8px">Você preenche aqui, eu recebo no painel admin em <b>login.html</b> e te respondo em até 24h.</p>
+        <div class="info-box">
+          <div class="icon-box" style="background:#f3e9fb;color:var(--purple-dark)"><i class="fa-solid fa-envelope"></i></div>
+          <div><b style="font-size:.88rem">E-mail</b><br><small style="color:var(--muted)">ana.10364057@aluno.mg.gov.br</small></div>
+        </div>
+        <div class="info-box">
+          <div class="icon-box" style="background:#e8f8ee;color:#16a34a"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div><b style="font-size:.88rem">Escola</b><br><small style="color:var(--muted)">E.E. Doutor João Beraldo</small></div>
+        </div>
+      </div>
+    </section>
+
+    <form id="form-contato" onsubmit="enviarContato(event)" class="card">
+      <h3 style="font-weight:800;margin-bottom:4px"><i class="fa-solid fa-paper-plane" style="color:var(--purple-dark)"></i> Formulário completo</h3>
+      <p style="color:var(--muted);font-size:.78rem;margin-bottom:14px">* obrigatório</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div><label for="c-nome" class="label">Seu nome *</label><input id="c-nome" class="input" placeholder="Ana Silva" required></div>
+        <div><label for="c-email" class="label">Seu e-mail *</label><input id="c-email" type="email" class="input" placeholder="seu@email.com" required></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div><label for="c-cpf" class="label">CPF</label><input id="c-cpf" class="input" placeholder="000.000.000-00" maxlength="14" oninput="mascaraCPF(this)"></div>
+        <div><label for="c-tel" class="label">WhatsApp / Telefone</label><input id="c-tel" class="input" placeholder="(00) 00000-0000"></div>
+      </div>
+
+      <label for="c-interesse" class="label">No que você se interessa? *</label>
+      <select id="c-interesse" class="select" required>
+        <option value="">Selecione...</option>
+        <option>Criação de site</option>
+        <option>Landing Page</option>
+        <option>E-commerce</option>
+        <option>Design</option>
+        <option>Ajuda com TI</option>
+        <option>Parceria / Freelance</option>
+        <option>Outro</option>
+      </select>
+
+      <label for="c-problema" class="label">Qual é o seu problema? *</label>
+      <select id="c-problema" class="select" required>
+        <option value="">Selecione...</option>
+        <option>Preciso de um site do zero</option>
+        <option>Meu site não está responsivo</option>
+        <option>Preciso vender mais online</option>
+        <option>Divulgar negócio</option>
+        <option>Dúvida escolar</option>
+        <option>Outro</option>
+      </select>
+
+      <label for="c-msg" class="label">Sua mensagem *</label>
+      <textarea id="c-msg" class="textarea" placeholder="Escreva com detalhes..." style="min-height:110px" required></textarea>
+
+      <button type="submit" class="btn-pill" style="width:100%;margin-top:18px;padding:14px"><i class="fa-solid fa-paper-plane"></i> Enviar mensagem</button>
+    </form>
+  </div>
+</main>
+
+<footer style="border-top:1px solid var(--border);padding:28px;text-align:center;color:#9a8fa6;font-size:.84rem">© 2026 Ana&#32;Clara Martins — Portfólio de TI | E.E. Doutor João Beraldo</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+<script>
+function mascaraCPF(i){
+  let v=i.value.replace(/\D/g,'').slice(0,11);
+  v=v.replace(/(\d{3})(\d)/,'$1.$2'); v=v.replace(/(\d{3})(\d)/,'$1.$2'); v=v.replace(/(\d{3})(\d{1,2})$/,'$1-$2'); i.value=v;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre mim | Ana&#32;Clara Martins - TI e Futura Vet</title>
+<meta name="description" content="Conheça Ana Clara Martins Lisboa, estudante de TI na E.E. Doutor João Beraldo. Sou apaixonada por tecnologia e meu maior sonho é me formar em Medicina Veterinária.">
+<link rel="icon" type="image/png" href="img/logo.png">
+<meta property="og:title" content="Sobre mim | Ana Clara Martins - Futura Veterinária">
+<meta property="og:description" content="Minha história: estudante de TI e meu sonho de ser Veterinária. Responsável, organizada e apaixonada por animais.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/logo.png">
+<meta property="og:locale" content="pt_BR">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+:root{--purple:#8951c6;--purple-dark:#7540ad;--text:#14101c;--muted:#8a8394;--border:#eee5f6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--text);line-height:1.7}
+a{text-decoration:none;color:inherit}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.wrap{max-width:1120px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:18px 24px}
+.logo{font-weight:800;font-size:1.15rem;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}.logo span{color:var(--purple-dark)}
+.nav{display:flex;gap:26px;align-items:center;color:#5b5466;font-size:.9rem}
+.nav a.active{color:var(--purple-dark);font-weight:700;border-bottom:2px solid var(--purple-dark);padding-bottom:2px}
+.btn-pill{padding:10px 22px;border-radius:999px;background:var(--purple-dark);color:#fff!important;font-weight:700;font-size:.88rem;display:inline-flex;gap:6px;align-items:center}
+.hero{max-width:1120px;margin:auto;padding:80px 24px 50px;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.kicker{font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:var(--purple-dark);font-weight:800;margin-bottom:16px}
+.hero h1{font-size:clamp(2.2rem,4vw,3rem);line-height:.98;font-weight:800;letter-spacing:-.03em}
+.hero h1 .line-purple{color:var(--purple-dark)}
+.hero .lead{color:#3a3446;font-size:1.05rem;margin-top:18px;line-height:1.6}
+.badges{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:999px;font-size:.78rem;font-weight:700;border:1px solid var(--border);background:#fff}
+.badge.vet{background:#fff1f2;border-color:#ffd6de;color:#b91c3a}
+.badge.ti{background:#f7f0fe;border-color:#e3d3f4;color:var(--purple-dark)}
+.visual{border-radius:28px;overflow:hidden;border:1px solid #ead9f3;box-shadow:0 20px 60px rgba(90,30,130,.12);position:relative}
+.visual img{width:100%;height:520px;object-fit:cover;display:block}
+.visual .caption{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:12px;border:1px solid var(--border)}
+.section{max-width:1120px;margin:auto;padding:64px 24px;border-top:1px solid #f2e9f9}
+.section-title{font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:var(--purple-dark);font-weight:800;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.card{border:1px solid var(--border);border-radius:20px;padding:24px;background:#fff}
+.card h3{font-size:1.05rem;font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #f6f0fb}
+.item:last-child{border-bottom:none}
+.dot{width:9px;height:9px;border-radius:50%;margin-top:7px;flex-shrink:0}
+.dot.purple{background:var(--purple-dark);box-shadow:0 0 0 4px #f3e9fb}
+.dot.pink{background:#e11d48;box-shadow:0 0 0 4px #ffe0e6}
+.small{font-size:.88rem;color:var(--muted);line-height:1.5}
+.skill{padding:12px 0;border-bottom:1px solid #f6f0fb;display:flex;gap:12px}
+.skill:last-child{border-bottom:none}
+.check{width:28px;height:28px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.75rem}
+footer{border-top:1px solid var(--border);padding:26px;text-align:center;color:var(--muted);font-size:.8rem}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:50px}.grid{grid-template-columns:1fr}.nav{display:none}.visual img{height:420px}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo AC Ana Clara Martins" style="height:26px"> Ana&#32;Clara <span>Martins</span></a>
+    <nav class="nav" aria-label="Menu principal">
+      <a href="index.html">Início</a>
+      <a href="sobre.html" class="active">Quem sou eu</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contato.html">Contato</a>
+      <a href="login.html" class="btn-pill" aria-label="Entrar na área restrita"><i class="fa-solid fa-lock"></i> Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <div class="kicker">Quem sou eu — a única página com meu sonho de veterinária</div>
+      <h1>Ana&#32;Clara&#32;Martins&#32;Lisboa<br><span class="line-purple">Estudante de TI</span><br>e Futura Veterinária</h1>
+      <p class="lead">Estudo na <strong>E.E. Doutor João Beraldo</strong> e sou apaixonada por tecnologia e animais. Esta é a única página do meu portfólio onde conto meu maior sonho de vida.</p>
+      <div class="badges">
+        <span class="badge vet"><i class="fa-solid fa-paw"></i> Sonho: Medicina Veterinária</span>
+        <span class="badge ti"><i class="fa-solid fa-code"></i> TI • HTML CSS JS Supabase</span>
+      </div>
+    </div>
+    <div class="visual">
+      <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=900" alt="Dois cachorros felizes correndo - Representando meu amor por animais e meu sonho de ser veterinária - Ana Clara Martins">
+      <div class="caption">
+        <div style="width:38px;height:38px;border-radius:11px;background:#fff1f2;color:#e11d48;display:flex;align-items:center;justify-content:center"><i class="fa-solid fa-heart"></i></div>
+        <div>
+          <strong style="font-size:.88rem;display:block;line-height:1.1">Meu maior sonho</strong>
+          <span style="font-size:.74rem;color:#6e657a">Ser Veterinária e cuidar com amor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">Minha formação e habilidades</div>
+    <div class="grid">
+      <div class="card">
+        <h3><i class="fa-solid fa-graduation-cap" style="color:#7540ad"></i> Minha formação</h3>
+        <div class="item">
+          <div class="dot purple"></div>
+          <div>
+            <strong style="font-size:.92rem">Ensino Médio + Técnico em TI</strong>
+            <div class="small">E.E. Doutor João Beraldo — 2026/2027<br>HTML semântico, CSS, JavaScript, Supabase e SEO básico</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="dot pink"></div>
+          <div>
+            <strong style="font-size:.92rem">Futuro: Medicina Veterinária</strong>
+            <div class="small">Meu maior sonho é entrar na faculdade de Medicina Veterinária para cuidar de animais com responsabilidade, amor e dedicação. Sou responsável, organizada e pontual.</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-sparkles" style="color:#16a34a"></i> O que sei fazer</h3>
+        <div class="skill"><div class="check" style="background:#f3e9fb;color:#7540ad"><i class="fa-solid fa-check"></i></div><div><strong style="font-size:.88rem">HTML Semântico e SEO</strong><div class="small">Header, nav, main, section, article, footer e alt nas imagens</div></div></div>
+        <div class="skill"><div class="check" style="background:#f0fdf4;color:#16a34a"><i class="fa-solid fa-check"></i></div><div><strong style="font-size:.88rem">CSS e Responsivo</strong><div class="small">Sites lindos no celular e computador, paleta branca + roxa </div></div></div>
+        <div class="skill"><div class="check" style="background:#fff1f2;color:#e11d48"><i class="fa-solid fa-check"></i></div><div><strong style="font-size:.88rem">JavaScript + Supabase</strong><div class="small">Login via tabela usuarios, projetos e mensagens no banco</div></div></div>
+        <div class="skill"><div class="check" style="background:#fef9c3;color:#a16207"><i class="fa-solid fa-check"></i></div><div><strong style="font-size:.88rem">Organização e Pontualidade</strong><div class="small">Capricho, responsabilidade e facilidade para aprender coisas novas</div></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Ana&#32;Clara Martins — Portfólio de TI | E.E. Doutor João Beraldo • Sonho de veterinária contado só nesta página</footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio | Ana&#32;Clara Martins - Projetos TI</title>
+<meta name="description" content="Veja os projetos de TI de Ana Clara Martins, estudante da E.E. Doutor João Beraldo. Todos os projetos são cadastrados por mim no painel admin com Supabase.">
+<link rel="icon" type="image/png" href="img/logo.png">
+<meta property="og:title" content="Portfólio | Ana Clara Martins - Projetos TI">
+<meta property="og:description" content="Meus projetos de TI da E.E. Doutor João Beraldo cadastrados com Supabase.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+:root{--purple:#8951c6;--purple-dark:#7540ad;--text:#1a1620;--muted:#7c7586;--border:#ece3f6;--bg:#fcf9ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#fff;color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.wrap{max-width:1220px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:18px 24px}
+.logo{font-weight:800;font-size:1.25rem;display:flex;align-items:center;gap:8px}.logo span{color:var(--purple-dark)}
+.nav{display:flex;gap:26px;align-items:center;color:#5b5466;font-size:.92rem;font-weight:500}
+.nav a.active{color:var(--purple-dark);font-weight:700;border-bottom:2px solid var(--purple-dark);padding-bottom:2px}
+.btn-pill{padding:10px 22px;border-radius:999px;background:var(--purple-dark);color:#fff!important;font-weight:700;border:none;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.section{max-width:1220px;margin:auto;padding:60px 24px}
+.eyebrow{font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:var(--purple-dark);font-weight:800;margin-bottom:12px}
+.title{font-size:clamp(2.2rem,4vw,3rem);font-weight:800;letter-spacing:-.03em;line-height:.95}
+.title span{color:var(--purple-dark)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px;margin-top:32px}
+.card-proj{border:1px solid var(--border);border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 4px 24px rgba(90,40,130,.04);transition:.25s;display:flex;flex-direction:column}
+.card-proj:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(117,64,173,.12);border-color:#e2d0f3}
+.card-thumb{height:200px;background:linear-gradient(135deg,#f5eeff 0%,#e8d5ff 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.card-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.card-thumb .icon-fallback{width:56px;height:56px;border-radius:16px;background:#fff;color:var(--purple-dark);display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 8px 20px rgba(117,64,173,.15)}
+.card-body{padding:18px 20px 16px;flex:1;display:flex;flex-direction:column}
+.badge{display:inline-flex;padding:5px 10px;border-radius:999px;font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px;width:fit-content}
+.badge.comercio{background:#fef9c3;color:#a16207;border:1px solid #fde68a}
+.badge.portfolio{background:#f3e9fb;color:#7540ad;border:1px solid #e9d8f5}
+.badge.site{background:#dcfce7;color:#15803d;border:1px solid #bbf7d0}
+.card-proj h3{font-size:1.05rem;font-weight:800;line-height:1.2;margin-bottom:6px}
+.card-proj p.desc{color:#7c7586;font-size:.88rem;line-height:1.5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;flex:1}
+.card-footer{margin-top:14px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #f6f0fb;padding-top:12px}
+.link-proj{color:var(--purple-dark);font-weight:700;font-size:.84rem;display:inline-flex;gap:5px;align-items:center}
+.skeleton{height:320px;border-radius:22px;background:linear-gradient(90deg,#f5f0fb 25%,#ece2f6 50%,#f5f0fb 75%);background-size:200% 100%;animation:shine 1.5s infinite}
+@keyframes shine{0%{background-position:200% 0}100%{background-position:-200% 0}}
+footer{border-top:1px solid var(--border);padding:28px;text-align:center;color:var(--muted);font-size:.85rem;margin-top:40px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}.nav{display:none}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+<div class="wrap">
+<a href="index.html" class="logo"><img src="img/logo.png" alt="Logo AC Ana Clara Martins" style="height:26px"> Ana&#32;Clara <span>Martins</span></a>
+<nav class="nav" aria-label="Menu principal">
+<a href="index.html">Início</a>
+<a href="sobre.html">Quem sou eu</a>
+<a href="portfolio.html" class="active">Portfólio</a>
+<a href="contato.html">Contato</a>
+<a href="login.html" class="btn-pill" aria-label="Entrar na área restrita"><i class="fa-solid fa-lock"></i> Login</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="section" style="padding-bottom:16px">
+<div class="eyebrow">Meu trabalho • Supabase</div>
+<h1 class="title">Trabalhos <span>recentes</span></h1>
+<p style="color:var(--muted);max-width:620px;margin-top:12px">Meus projetos de TI da E.E. Doutor João Beraldo. Todos cadastrados por mim no painel com Supabase. <strong id="contador-projetos" style="color:var(--purple-dark)"></strong></p>
+</section>
+
+<section class="section" style="padding-top:24px">
+<div id="lista-projetos" class="grid">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;width:100%;grid-column:1/-1">
+<div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 Ana&#32;Clara Martins — Portfólio de TI | E.E. Doutor João Beraldo | HTML semântico, SEO e Supabase</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+<script>
+const supabaseClient = supabase.createClient('https://qjippsnmszhpsnfddwhi.supabase.co','sb_publishable__797yt1Ud0ihbHmuZuaT8w_X2xevNyN');
+const lista=document.getElementById('lista-projetos');
+const contador=document.getElementById('contador-projetos');
+
+function getBadgeClass(categoria){
+  const cat = (categoria||'').toLowerCase();
+  if(cat.includes('comerc')||cat.includes('padaria')||cat.includes('loja')) return 'comercio';
+  if(cat.includes('site')) return 'site';
+  return 'portfolio';
+}
+
+function render(projetos){
+if(!projetos||projetos.length===0){
+contador.textContent = '';
+lista.innerHTML=`<div style="grid-column:1/-1;text-align:center;padding:70px 30px;border:1.5px dashed #e2d0f3;border-radius:24px;background:#fdfaff;color:#9a8fa6"><div style="width:60px;height:60px;border-radius:18px;background:#f3e9fb;color:#7540ad;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:1.6rem"><i class="fa-solid fa-folder-open"></i></div><h3 style="font-weight:800;color:#1a1620">Nenhum projeto ainda</h3><p style="font-size:.88rem;margin-top:6px;max-width:340px;margin-left:auto;margin-right:auto">Seus projetos aparecerão aqui quando você cadastrar no painel. Vai em Login e cadastre seu primeiro projeto!</p><a href="login.html" style="display:inline-flex;margin-top:18px;padding:10px 22px;border-radius:999px;background:#7540ad;color:#fff;font-weight:700;gap:6px;align-items:center"><i class="fa-solid fa-plus"></i> Cadastrar projeto</a></div>`;return;
+}
+contador.textContent = `${projetos.length} ${projetos.length===1?'projeto cadastrado':'projetos cadastrados'}`;
+lista.innerHTML='';
+projetos.forEach(p=>{
+  const categoria = p.categoria || 'Portfólio';
+  const badgeClass = getBadgeClass(categoria);
+  const temImagem = p.imagem && p.imagem.trim() !== '' && p.imagem.startsWith('http');
+  let thumbHTML = '';
+  if(temImagem){
+    thumbHTML = `<div class="card-thumb"><img src="${p.imagem}" alt="Imagem do projeto ${p.titulo}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"><div class="icon-fallback" style="display:none"><i class="fa-solid fa-image"></i></div></div>`;
+  } else {
+    thumbHTML = `<div class="card-thumb"><div class="icon-fallback"><i class="fa-solid fa-code"></i></div></div>`;
+  }
+  lista.innerHTML+=`
+    <article class="card-proj">
+      ${thumbHTML}
+      <div class="card-body">
+        <span class="badge ${badgeClass}">${categoria}</span>
+        <h3>${p.titulo}</h3>
+        <p class="desc">${p.descricao||'Projeto desenvolvido por Ana Clara Martins.'}</p>
+        <div class="card-footer">
+          <a href="${p.link||'#'}" target="_blank" rel="noopener" class="link-proj">Ver projeto <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7rem"></i></a>
+          <span style="font-size:.72rem;color:#b8a9c6;font-weight:600">2026 • TI</span>
+        </div>
+      </div>
+    </article>`;
+});
+}
+
+async function carregar(){
+let cache=[]; try{cache=JSON.parse(localStorage.getItem('meus_projetos')||'[]');}catch(e){}
+if(cache.length>0) render(cache);
+try{
+const {data, error}=await supabaseClient.from('projetos').select('*').order('created_at',{ascending:false});
+if(error) throw error;
+if(data){ if(data.length>0) localStorage.setItem('meus_projetos',JSON.stringify(data)); render(data); }
+}catch(e){ if(cache.length===0) render([]); }
+}
+carregar();
+</script>
+</body>
+</html>
